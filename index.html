@@ -19,22 +19,32 @@
         background-color: rgb(220, 220, 220);
         color: rgb(110, 110, 255);
     }
+    .navbar-nav{
+        display:table;
+        width:50%;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: table-cell;
+        text-align: center;
+    }
     </style>
   </head>
   <body>
-      <div class="container">
-        <nav class="navbar navbar-static" id="nav-bar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="./img/brand.png" alt=""> Blue Carat diamonds</a>
-                    <ul class="nav navbar-nav">
-                        <li role="presentation" class="active"><a href="#">Home</a></li>
-                        <li role="presentation"><a href="#">Products</a></li>
-                        <li role="presentation"><a href="#">Shipping</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-static" id="nav-bar">
+        <a class="navbar-brand" href="#"><img src="./img/brand.png" alt="" id="header-image"> Blue Carat diamonds</a>
+        <div class="navbar-nav">
+            <ul class="nav mr-auto">
+                <li class="nav-item active"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Products</a></li>
+                <li class="nav-item"><a href="#">Shipping</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="container">
         <div class="page-header">
         </div>
         <div class="jumbotron">
