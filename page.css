@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(75deg, rgb(228, 215, 215),rgb(170, 170, 170));
+    background: linear-gradient(75deg, rgb(228, 215, 215),rgb(230, 230, 230));
 }
 
 .jumbotron{
@@ -8,7 +8,7 @@ body{
     color: white;
 }
 .navbar{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(200, 200, 255);
     color: rgb(110, 110, 255);
 }
 .h2-jumbo{
@@ -24,25 +24,35 @@ body{
     font-size: 10px;
 }
 #email-container{
-    margin: 120px;
-    max-height: 600px;
+    margin-top: 120px;
+    min-height: 250px;
 }
 #card-container{
-    margin: 120px;
-    max-height: 800px;
+    margin-top: 50px;
 }
-
+#more-info{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    min-height: 150px;
+}
 
 .card{
     float: left;
     margin: 30px;
+    border: 1px solid #000;
+    font-size: 15px;
+}
+.ci{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    height: 128px;
 }
 .credits{
     font-size: 10px;
 }
-.img-fluid{
-    width: 150px;
-    height: 100%
+.card-img-top{
+    width: 100%;
 }
 
 input[type="email"] {
