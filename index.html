@@ -10,60 +10,96 @@
 
     <title>Blue Carat</title>
 
-    <style>
-    .jumbotron{
-        background-color: rgb(110, 110, 255);
-        color: white;
-    }
-    .navbar{
-        background-color: rgb(220, 220, 220);
-        color: rgb(110, 110, 255);
-    }
-    .navbar-nav{
-        display:table;
-        width:50%;
-        margin: 0;
-    }
-    .navbar-nav > li {
-        float: none;
-        display: table-cell;
-        text-align: center;
-    }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./page.css">
   </head>
   <body>
-    <nav class="navbar navbar-static" id="nav-bar">
-        <a class="navbar-brand" href="#"><img src="./img/brand.png" alt="" id="header-image"> Blue Carat diamonds</a>
-        <div class="navbar-nav">
+    <!-- Navigation bar and items -->
+    <header id="header">
+        <nav class="navbar fixed-top" id="nav-bar">
+            <a class="navbar-brand" href="#"><img src="./img/brand.png" alt="" id="header-image"> Blue Carat diamonds</a>
             <ul class="nav mr-auto">
-                <li class="nav-item active"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Products</a></li>
-                <li class="nav-item"><a href="#">Shipping</a></li>
-                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#card-container">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
             </ul>
-        </div>
-    </nav>
-        
+        </nav>
+    </header>
+    
+    <!-- Jumbotron -->
     <div class="container">
-        <div class="page-header">
-        </div>
         <div class="jumbotron">
-            <h2>
+            <br><br><br>
+            <h2 class="h2-jumbo">
                 Ethically produced, lab-grown diamonds...
             </h2>
             <p>
-                <a href="#" class="btn btn-light btn-sm" role="button">Shop now</a>
-                <button type="submit" class="btn btn-danger" role="button">Button</button>
-                <input type="button" value="Info" class="btn btn-info">
-                <div class="btn-group btn-group-lg" role="group">
-                    <button type="button" class="btn btn-light">One</button>
-                    <button type="button" class="btn btn-light">Two</button>
-                    <button type="button" class="btn btn-light">Three</button>
-                </div>
+                <a href="#" class="btn btn-light btn-md" role="button" id="shop-now">Shop now</a>
+            </p>
+            <h2 class="h2-jumbo">
+                Or find out more..
+            </h2>
+            <p>
+                <input type="button" value="Info" class="btn btn-info" id="info">
             </p>
 
         </div>
-      </div>
+    </div>
+
+    <!-- Register email address form -->
+    <div class="container" id="email-container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div class="form-group" align="center">
+                <label for="emailReg">Send me Blue Carat news, updates and offers.</label>
+                
+                <br>
+                
+                <input type="email" name="email" id="emailReg" placeholder="Enter email">
+                
+                <button id="submit" type="submit" class="btn btn-primary" align="center">Submit</button>
+                
+                <small id="emailNote"class="form-text text-muted">We'll never share your email with anyone else.</small>
+                
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                
+                <label class="form-check-label" for="exampleCheck1" id="agree">By checking this box and submitting my Email address, I agree to the Blue Carat Privacy Policy and Terms & Conditions</label>
+            </div>
+        </form>
+    </div>
+
+    <!-- Video embed -->
+    <div class="embed-responsive embed-responsive-16by9" id="video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=lWA2pjMjpBs" allowfullscreen></iframe>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container" id="card-container" align="center">
+        <div class="card" style="width: 18rem;">
+            <img class="img-fluid" src="./img/diamond.png" alt="loose-diamonds" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Loose diamonds</h5>
+                <p class="card-text">Whether you are collecting diamonds as a hobby or if you would like to set your own rings, come check out our loose diamonds!</p>
+                <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="img-fluid" src="./img/wedding-ring (1).png" alt="diamond-ring" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Diamond rings</h5>
+                <p class="card-text">Browse our excellently crafted modern and classic design diamond rings, all products are made to the highest standards!</p>
+                <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="img-fluid" src="./img/wedding-ring.png" alt="wedding-bands" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Wedding bands</h5>
+                <p class="card-text">From infinity rings to double bands, find them all here at our professionally hand crafted wedding band page.</p>
+                <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -72,17 +108,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
   <footer>
-    <div>Icons made by 
-        <a href="https://www.freepik.com/" title="Freepik">
+    <!-- Credit for icons source -->
+    <div class="credits">Icons made by 
+        <a class="credits" href="https://www.freepik.com/" title="Freepik">
             Freepik
         </a> from 
-        <a href="https://www.flaticon.com/" title="Flaticon">
+        <a class="credits" href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
         </a>
          is licensed by 
-        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
+        <a class="credits" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
             CC 3.0 BY
         </a>
+        <br>
+        <p>
+            Image by DWilliams on Pixabay
+        </p>
     </div>
   </footer>
 </html>

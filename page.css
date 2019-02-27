@@ -1,3 +1,51 @@
-.nav {
-    background-color: blue
+body{
+    background: linear-gradient(75deg, rgb(228, 215, 215),rgb(170, 170, 170));
+}
+
+.jumbotron{
+    background-image: url(./img/diamond-620521_1280.jpg);
+    background-size: cover;
+    color: white;
+}
+.navbar{
+    background-color: rgb(230, 230, 230);
+    color: rgb(110, 110, 255);
+}
+.h2-jumbo{
+    margin-bottom: 20px;
+}
+#shop-now{
+    margin-bottom: 50px;
+}
+#info{
+    margin-bottom: 30px;
+}
+#agree{
+    font-size: 10px;
+}
+#email-container{
+    margin: 120px;
+    max-height: 600px;
+}
+#card-container{
+    margin: 120px;
+    max-height: 800px;
+}
+
+
+.card{
+    float: left;
+    margin: 30px;
+}
+.credits{
+    font-size: 10px;
+}
+.img-fluid{
+    width: 150px;
+    height: 100%
+}
+
+input[type="email"] {
+    max-width: 350px;
+    width: 100%;
 }
